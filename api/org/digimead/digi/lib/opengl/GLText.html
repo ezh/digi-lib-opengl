@@ -1,0 +1,1024 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>org.digimead.digi.lib.opengl.GLText</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+      <div id="definition">
+        <img src="../../../../../lib/class_big.png" />
+        <p id="owner"><a name="org" class="extype" href="../../../../package.html">org</a>.<a name="org.digimead" class="extype" href="../../../package.html">digimead</a>.<a name="org.digimead.digi" class="extype" href="../../package.html">digi</a>.<a name="org.digimead.digi.lib" class="extype" href="../package.html">lib</a>.<a name="org.digimead.digi.lib.opengl" class="extype" href="package.html">opengl</a></p>
+        <h1>GLText</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">GLText</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p> This is a OpenGL ES 1.0 dynamic font rendering system. It loads fonts,
+ generates a font map (texture) from them, and allows rendering of
+ text strings.
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>the rendering portions of this class uses a sprite batcher in order
+ provide decent speed rendering. Also, rendering assumes a BOTTOM-LEFT
+ origin, and the (x,y) positions are relative to that, as well as the
+ bottom-left of the string to render.
+</p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+        </div></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+            </div>
+        <div id="ancestors">
+              <span class="filtertype">Inherited</span>
+              <ol><li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li></ol>
+              <ol id="linearization"><li name="org.digimead.digi.lib.opengl.GLText" class="in"><span>GLText</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
+            </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div class="members" id="constructors">
+              <h3>Instance Constructors</h3>
+              <ol><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#this" data-isabs="false">
+      <a id="this:GLText"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">GLText</span><span class="params">(<span name="gl">gl: <span name="javax.microedition.khronos.opengles.GL10" class="extype">GL10</span></span>, <span name="assets">assets: <span name="android.content.res.AssetManager" class="extype">AssetManager</span></span>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">gl</dt><dd class="cmt"><p><a href="http://developer.android.com/reference/javax/microedition/khronos/opengles/GL10.html">the GL interface</a>.</p></dd><dt class="param">assets</dt><dd class="cmt"><p><a href="http://developer.android.com/reference/android/content/res/AssetManager.html">AssetManager instance</a>
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#CHAR_BATCH_SIZE" data-isabs="false">
+      <a id="CHAR_BATCH_SIZE:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CHAR_BATCH_SIZE</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Number of Characters to Render Per Batch</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#CHAR_CNT" data-isabs="false">
+      <a id="CHAR_CNT:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CHAR_CNT</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Character Count (Including Character to use for Unknown)</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#CHAR_END" data-isabs="false">
+      <a id="CHAR_END:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CHAR_END</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Last Character (ASCII Code)</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#CHAR_NONE" data-isabs="false">
+      <a id="CHAR_NONE:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CHAR_NONE</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Character to Use for Unknown (ASCII Code)</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#CHAR_START" data-isabs="false">
+      <a id="CHAR_START:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CHAR_START</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">First Character (ASCII Code)</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#CHAR_UNKNOWN" data-isabs="false">
+      <a id="CHAR_UNKNOWN:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CHAR_UNKNOWN</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Index of the Unknown Character</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#FONT_SIZE_MAX" data-isabs="false">
+      <a id="FONT_SIZE_MAX:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FONT_SIZE_MAX</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Maximum Font Size (Pixels)</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#FONT_SIZE_MIN" data-isabs="false">
+      <a id="FONT_SIZE_MIN:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FONT_SIZE_MIN</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Minumum Font Size (Pixels)</p>
+    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#batch" data-isabs="false">
+      <a id="batch:SpriteBatch"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">batch</span><span class="result">: <a name="org.digimead.digi.lib.opengl.SpriteBatch" class="extype" href="SpriteBatch.html">SpriteBatch</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Batch Renderer, Create Sprite Batch (with Defined Size)</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#begin" data-isabs="false">
+      <a id="begin():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">begin</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">call this method before respectively all draw() calls using a text instance
+</p>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#cellHeight" data-isabs="false">
+      <a id="cellHeight:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cellHeight</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Character Cell Width/Height</p><div class="fullcomment"><div class="comment cmt"><p>Character Cell Width/Height</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#cellWidth" data-isabs="false">
+      <a id="cellWidth:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cellWidth</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Character Cell Width/Height</p><div class="fullcomment"><div class="comment cmt"><p>Character Cell Width/Height</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#charHeight" data-isabs="false">
+      <a id="charHeight:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">charHeight</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Character Height (Maximum; Pixels)</p><div class="fullcomment"><div class="comment cmt"><p>Character Height (Maximum; Pixels)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#charRgn" data-isabs="false">
+      <a id="charRgn:Array[TextureRegion]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">charRgn</span><span class="result">: <span name="scala.Array" class="extype">Array</span>[<a name="org.digimead.digi.lib.opengl.TextureRegion" class="extype" href="TextureRegion.html">TextureRegion</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Region of Each Character (Texture Coordinates)</p>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#charWidthMax" data-isabs="false">
+      <a id="charWidthMax:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">charWidthMax</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Character Width (Maximum; Pixels)</p><div class="fullcomment"><div class="comment cmt"><p>Character Width (Maximum; Pixels)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#charWidths" data-isabs="false">
+      <a id="charWidths:Array[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">charWidths</span><span class="result">: <span name="scala.Array" class="extype">Array</span>[<span name="scala.Float" class="extype">Float</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Width of Each Character (Actual; Pixels)</p>
+    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#colCnt" data-isabs="false">
+      <a id="colCnt:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">colCnt</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Number of Rows/Columns</p><div class="fullcomment"><div class="comment cmt"><p>Number of Rows/Columns</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#draw" data-isabs="false">
+      <a id="draw(String,Float,Float):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">draw</span><span class="params">(<span name="text">text: String</span>, <span name="x">x: <span name="scala.Float" class="extype">Float</span></span>, <span name="y">y: <span name="scala.Float" class="extype">Float</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">draw text at the specified x,y position
+</p><div class="fullcomment"><div class="comment cmt"><p>draw text at the specified x,y position
+</p></div><dl class="paramcmts block"><dt class="param">text</dt><dd class="cmt"><p>the string to draw</p></dd><dt class="param">x</dt><dd class="cmt"><p>the x position to draw text at (bottom left of text; including descent)</p></dd><dt class="param">y</dt><dd class="cmt"><p>the y position to draw text at (bottom left of text; including descent)
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#drawC" data-isabs="false">
+      <a id="drawC(String,Float,Float):Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">drawC</span><span class="params">(<span name="text">text: String</span>, <span name="x">x: <span name="scala.Float" class="extype">Float</span></span>, <span name="y">y: <span name="scala.Float" class="extype">Float</span></span>)</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">draw text CENTERED at the specified x,y position
+</p><div class="fullcomment"><div class="comment cmt"><p>draw text CENTERED at the specified x,y position
+</p></div><dl class="paramcmts block"><dt class="param">text</dt><dd class="cmt"><p>the string to draw</p></dd><dt class="param">x</dt><dd class="cmt"><p>the x position to draw text at (bottom left of text)</p></dd><dt class="param">y</dt><dd class="cmt"><p>the y position to draw text at (bottom left of text)</p></dd><dt>returns</dt><dd class="cmt"><p>the total width of the text that was drawn
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#drawCX" data-isabs="false">
+      <a id="drawCX(String,Float,Float):Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">drawCX</span><span class="params">(<span name="text">text: String</span>, <span name="x">x: <span name="scala.Float" class="extype">Float</span></span>, <span name="y">y: <span name="scala.Float" class="extype">Float</span></span>)</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">draw text CENTERED at the specified x position
+</p><div class="fullcomment"><div class="comment cmt"><p>draw text CENTERED at the specified x position
+</p></div><dl class="paramcmts block"><dt class="param">text</dt><dd class="cmt"><p>the string to draw</p></dd><dt class="param">x</dt><dd class="cmt"><p>the x position to draw text at (bottom left of text)</p></dd><dt class="param">y</dt><dd class="cmt"><p>the y position to draw text at (bottom left of text)</p></dd><dt>returns</dt><dd class="cmt"><p>the total width of the text that was drawn
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#drawCY" data-isabs="false">
+      <a id="drawCY(String,Float,Float):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">drawCY</span><span class="params">(<span name="text">text: String</span>, <span name="x">x: <span name="scala.Float" class="extype">Float</span></span>, <span name="y">y: <span name="scala.Float" class="extype">Float</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">draw text CENTERED at the specified y position
+</p><div class="fullcomment"><div class="comment cmt"><p>draw text CENTERED at the specified y position
+</p></div><dl class="paramcmts block"><dt class="param">text</dt><dd class="cmt"><p>the string to draw</p></dd><dt class="param">x</dt><dd class="cmt"><p>the x position to draw text at (bottom left of text)</p></dd><dt class="param">y</dt><dd class="cmt"><p>the y position to draw text at (bottom left of text)</p></dd><dt>returns</dt><dd class="cmt"><p>the total width of the text that was drawn
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#drawTexture" data-isabs="false">
+      <a id="drawTexture(Int,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">drawTexture</span><span class="params">(<span name="width">width: <span name="scala.Int" class="extype">Int</span></span>, <span name="height">height: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">draw the entire font texture
+</p><div class="fullcomment"><div class="comment cmt"><p>draw the entire font texture
+</p></div><dl class="paramcmts block"><dt class="param">width</dt><dd class="cmt"><p>the width of the area to draw to. this is used
+to draw the texture to the top-left corner.</p></dd><dt class="param">height</dt><dd class="cmt"><p>the height of the area to draw to. this is used
+to draw the texture to the top-left corner.
+</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>for testing purposes only)
+</p></span></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#end" data-isabs="false">
+      <a id="end():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">end</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">call this method after respectively all draw() calls using a text instance
+</p>
+    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#fontAscent" data-isabs="false">
+      <a id="fontAscent:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontAscent</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Ascent (Above Baseline; Pixels)</p><div class="fullcomment"><div class="comment cmt"><p>Font Ascent (Above Baseline; Pixels)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#fontDescent" data-isabs="false">
+      <a id="fontDescent:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontDescent</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Descent (Below Baseline; Pixels)</p><div class="fullcomment"><div class="comment cmt"><p>Font Descent (Below Baseline; Pixels)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#fontHeight" data-isabs="false">
+      <a id="fontHeight:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontHeight</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Height (Actual; Pixels)</p><div class="fullcomment"><div class="comment cmt"><p>Font Height (Actual; Pixels)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#fontPadX" data-isabs="false">
+      <a id="fontPadX:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontPadX</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Padding (Pixels; On Each Side, ie.</p><div class="fullcomment"><div class="comment cmt"><p>Font Padding (Pixels; On Each Side, ie. Doubled on Both X+Y Axis)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#fontPadY" data-isabs="false">
+      <a id="fontPadY:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontPadY</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Padding (Pixels; On Each Side, ie.</p><div class="fullcomment"><div class="comment cmt"><p>Font Padding (Pixels; On Each Side, ie. Doubled on Both X+Y Axis)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getAscent" data-isabs="false">
+      <a id="getAscent():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAscent</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get the ascent font metric (scaled)
+</p><div class="fullcomment"><div class="comment cmt"><p>get the ascent font metric (scaled)
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the ascent font metric (scaled)
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getCharHeight" data-isabs="false">
+      <a id="getCharHeight():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCharHeight</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return Scaled Character Height</p>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getCharWidth" data-isabs="false">
+      <a id="getCharWidth(Char):Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCharWidth</span><span class="params">(<span name="chr">chr: <span name="scala.Char" class="extype">Char</span></span>)</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get the scaled width/height of a character, or max character width
+</p><div class="fullcomment"><div class="comment cmt"><p>get the scaled width/height of a character, or max character width
+</p></div><dl class="paramcmts block"><dt class="param">chr</dt><dd class="cmt"><p>the character to get width for</p></dd><dt>returns</dt><dd class="cmt"><p>the requested character size (scaled)
+</p></dd></dl><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>since all characters are the same height, no character index is required!
+excludes spacing!!
+</p></span></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getCharWidthMax" data-isabs="false">
+      <a id="getCharWidthMax():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCharWidthMax</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return Scaled Max Character Width</p>
+    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
+      <a id="getClass():java.lang.Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getDescent" data-isabs="false">
+      <a id="getDescent():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDescent</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get the descent font metric (scaled)
+</p><div class="fullcomment"><div class="comment cmt"><p>get the descent font metric (scaled)
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the descent font metric (scaled)
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getHeight" data-isabs="false">
+      <a id="getHeight():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getHeight</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get actual font height
+</p><div class="fullcomment"><div class="comment cmt"><p>get actual font height
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>actual font height
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getLength" data-isabs="false">
+      <a id="getLength(String):Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLength</span><span class="params">(<span name="text">text: String</span>)</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get the length of the specified string if rendered using current settings
+</p><div class="fullcomment"><div class="comment cmt"><p>get the length of the specified string if rendered using current settings
+</p></div><dl class="paramcmts block"><dt class="param">text</dt><dd class="cmt"><p>the string to get length for</p></dd><dt>returns</dt><dd class="cmt"><p>the length of the specified string (pixels)
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getScaleX" data-isabs="false">
+      <a id="getScaleX():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getScaleX</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get the current scaling used for the font
+</p><div class="fullcomment"><div class="comment cmt"><p>get the current scaling used for the font
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the x scale currently used for scale
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getScaleY" data-isabs="false">
+      <a id="getScaleY():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getScaleY</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get the current scaling used for the font
+</p><div class="fullcomment"><div class="comment cmt"><p>get the current scaling used for the font
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the y scale currently used for scale
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#getSpace" data-isabs="false">
+      <a id="getSpace():Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getSpace</span><span class="params">()</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">get the current spacing used for the font
+</p><div class="fullcomment"><div class="comment cmt"><p>get the current spacing used for the font
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the x space currently used for scale
+</p></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#load" data-isabs="false">
+      <a id="load(Typeface,Int,Int,Int):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">load</span><span class="params">(<span name="tf">tf: <span name="android.graphics.Typeface" class="extype">Typeface</span></span>, <span name="size">size: <span name="scala.Int" class="extype">Int</span></span>, <span name="padX">padX: <span name="scala.Int" class="extype">Int</span></span>, <span name="padY">padY: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">this will load the specified font file, create a texture for the defined
+character range, and setup all required values used to render with it.</p><div class="fullcomment"><div class="comment cmt"><p>this will load the specified font file, create a texture for the defined
+character range, and setup all required values used to render with it.
+</p></div><dl class="paramcmts block"><dt class="param">tf</dt><dd class="cmt"><p><a href="http://developer.android.com/reference/android/graphics/Typeface.html">typeface instance</a></p></dd><dt class="param">size</dt><dd class="cmt"><p>Requested pixel size of font (height)</p></dd><dt class="param">padX</dt><dd class="cmt"><p>Extra padding per character X Axis to prevent overlapping characters.</p></dd><dt class="param">padY</dt><dd class="cmt"><p>Extra padding per character Y Axis to prevent overlapping characters.
+</p></dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#rowCnt" data-isabs="false">
+      <a id="rowCnt:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rowCnt</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Number of Rows/Columns</p><div class="fullcomment"><div class="comment cmt"><p>Number of Rows/Columns</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#scaleX" data-isabs="false">
+      <a id="scaleX:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scaleX</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Scale (X,Y Axis), Default Scale = 1 (Unscaled)</p><div class="fullcomment"><div class="comment cmt"><p>Font Scale (X,Y Axis), Default Scale = 1 (Unscaled)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#scaleY" data-isabs="false">
+      <a id="scaleY:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scaleY</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Scale (X,Y Axis), Default Scale = 1 (Unscaled)</p><div class="fullcomment"><div class="comment cmt"><p>Font Scale (X,Y Axis), Default Scale = 1 (Unscaled)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#setScale" data-isabs="false">
+      <a id="setScale(Float,Float):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setScale</span><span class="params">(<span name="sx">sx: <span name="scala.Float" class="extype">Float</span></span>, <span name="sy">sy: <span name="scala.Float" class="extype">Float</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">set the scaling to use for the font
+</p><div class="fullcomment"><div class="comment cmt"><p>set the scaling to use for the font
+</p></div><dl class="paramcmts block"><dt class="param">sx</dt><dd class="cmt"><p>x axis scaling factors</p></dd><dt class="param">sy</dt><dd class="cmt"><p>y axis scaling factors
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#setScale" data-isabs="false">
+      <a id="setScale(Float):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setScale</span><span class="params">(<span name="scale">scale: <span name="scala.Float" class="extype">Float</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">set the scaling to use for the font
+</p><div class="fullcomment"><div class="comment cmt"><p>set the scaling to use for the font
+</p></div><dl class="paramcmts block"><dt class="param">scale</dt><dd class="cmt"><p>uniform scale for both x and y axis scaling
+</p></dd></dl></div>
+    </li><li visbl="pub" name="org.digimead.digi.lib.opengl.GLText#setSpace" data-isabs="false">
+      <a id="setSpace(Float):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setSpace</span><span class="params">(<span name="space">space: <span name="scala.Float" class="extype">Float</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">set the spacing (unscaled; ie.</p><div class="fullcomment"><div class="comment cmt"><p>set the spacing (unscaled; ie. pixel size) to use for the font
+</p></div><dl class="paramcmts block"><dt class="param">space</dt><dd class="cmt"><p>space for x axis spacing
+</p></dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#spaceX" data-isabs="false">
+      <a id="spaceX:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">spaceX</span><span class="result">: <span name="scala.Float" class="extype">Float</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Additional (X,Y Axis) Spacing (Unscaled)</p><div class="fullcomment"><div class="comment cmt"><p>Additional (X,Y Axis) Spacing (Unscaled)</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
+      <a id="synchronized[T0](⇒ T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#textureId" data-isabs="false">
+      <a id="textureId:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">textureId</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Font Texture ID [NOTE: Public for Testing Purposes Only!]</p><div class="fullcomment"><div class="comment cmt"><p>Font Texture ID [NOTE: Public for Testing Purposes Only!]</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#textureRgn" data-isabs="false">
+      <a id="textureRgn:TextureRegion"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">textureRgn</span><span class="result">: <a name="org.digimead.digi.lib.opengl.TextureRegion" class="extype" href="TextureRegion.html">TextureRegion</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Full Texture Region</p><div class="fullcomment"><div class="comment cmt"><p>Full Texture Region</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="prt" name="org.digimead.digi.lib.opengl.GLText#textureSize" data-isabs="false">
+      <a id="textureSize:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">textureSize</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Texture Size for Font (Square) [NOTE: Public for Testing Purposes Only!]</p><div class="fullcomment"><div class="comment cmt"><p>Texture Size for Font (Square) [NOTE: Public for Testing Purposes Only!]</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div name="scala.AnyRef" class="parent">
+              <h3>Inherited from AnyRef</h3>
+            </div><div name="scala.Any" class="parent">
+              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
