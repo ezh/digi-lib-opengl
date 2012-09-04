@@ -1,11 +1,11 @@
 digi-lib-opengl
-======================
+===============
 
-OpenGL library for Android
+Android library with OpenGL routines for Digi applications
 
 [Documentation](http://ezh.github.com/digi-lib-opengl)
 
-[API](http://ezh.github.com/digi-lib-opengl)/api)
+[API](http://ezh.github.com/digi-lib-opengl/api)
 
 * include ported code from GLText example by fractious games under CC0 1.0 public domain license
 
