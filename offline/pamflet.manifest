@@ -1,7 +1,7 @@
 CACHE MANIFEST
-# Sun Sep 02 16:17:01 MSK 2012
+# Tue Sep 04 21:51:05 MSK 2012
 css/custom.css
-Untitled.html
+index.html
 Contents+in+Depth.html
 Combined+Pages.html
 img/fork.png
@@ -17,3 +17,4 @@ js/jquery.collapse.js
 js/pamflet.js
 css/prettify.css
 js/prettify/prettify.js
+js/prettify/lang-scala.js

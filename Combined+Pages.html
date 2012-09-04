@@ -1,7 +1,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html>
       <head>
-        <title>Untitled — Combined Pages</title>
+        <title>digi-lib-opengl — Combined Pages</title>
         <link type="text/css" media="screen, projection" rel="stylesheet" href="css/blueprint/screen.css"></link>
         <link type="text/css" media="screen and (min-device-width: 800px), projection" rel="stylesheet" href="css/blueprint/grid.css"></link>
         <link type="text/css" media="print" rel="stylesheet" href="css/blueprint/print.css"></link> 
@@ -15,7 +15,9 @@
         <script src="js/jquery-1.6.2.min.js"></script>
         <script src="js/jquery.collapse.js"></script>
         <script src="js/pamflet.js"></script>
-        
+        <script type="text/javascript" src="js/prettify/prettify.js"></script><script type="text/javascript" src="js/prettify/lang-scala.js"></script><link type="text/css" rel="stylesheet" href="css/prettify.css"></link><script type="text/javascript"><!--
+        window.onload=function() { prettyPrint(); };
+      --></script>
         <meta charset="utf-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         
@@ -28,7 +30,7 @@
         <div class="container">
           <div class="span-16 prepend-1 append-1">
             <div class="top nav span-16 title">
-              <span>Untitled</span> — Combined Pages
+              <span>digi-lib-opengl</span> — Combined Pages
             </div>
           </div>
           <div class="span-16 prepend-1 append-1 contents">
@@ -37,9 +39,25 @@
       <a name="toc"></a>
       <h4 class="toctitle">Contents</h4>
       <div class="tocbody">
-      <div><a href="#Untitled">Untitled</a></div><ol class="toc">  </ol></div></div>
+      <div><a href="#digi-lib-opengl">digi-lib-opengl</a></div><ol class="toc">  </ol></div></div><h1 id="digi-lib-opengl">digi-lib-opengl</h1><p>Android library with OpenGL routines for Digi applications
+</p><ul><li>include ported code from GLText example by fractious games under CC0 1.0 public domain license
+</li></ul><p>http://fractiousg.blogspot.com/2012/04/rendering-text-in-opengl-on-android.html
+</p><h2 id="DOCUMENTATION">DOCUMENTATION</h2><h3 id=""><a  href="http://github.com/ezh/digi-lib-opengl/wiki">WIKI</a></h3><h3 id=""><a  href="http://ezh.github.com/digi-lib-opengl/api/">API (latest version)</a></h3><h3 id="Setup">Setup</h3><pre><code class="prettyprint lang-scala">libraryDependencies ++= Seq(
+  &quot;org.digimead&quot; %% &quot;digi-lib-opengl&quot; % &quot;version.version&quot;
+)
+
+resolvers += &quot;digi-lib&quot; at &quot;http://ezh.github.com/digi-lib-opengl/releases&quot;
+</code></pre><p>Download jar files directly from the <a  href="https://github.com/ezh/digi-lib-opengl/tree/master/publish/releases/org/digimead">GitHub</a>
+</p><h2 id="Target+platform">Target platform</h2><ul><li>Scala 2.8.0, 2.8.1, 2.8.2, 2.9.0, 2.9.0-1, 2.9.1, 2.9.2 (request for more if needed)
+</li></ul><h2 id="AUTHORS">AUTHORS</h2><ul><li>Alexey Aksenov
+</li></ul><h2 id="LICENSE">LICENSE</h2><p>The Digi Lib OpenGL Project is licensed to you under the terms of
+the Apache License, version 2.0, a copy of which has been
+included in the LICENSE file.
+Please check the individual source files for details.
+</p><h2 id="Copyright">Copyright</h2><p>Copyright ©  2011-2012 Alexey B. Aksenov/Ezh. All rights reserved.
+</p>
           </div>
         </div>
-        <a class="fork nav" href="http://github.com/sbt-android-mill/stopwatch"><img alt="Fork me on GitHub" src="img/fork.png"></img></a>
+        <a class="fork nav" href="http://github.com/ezh/digi-lib-opengl"><img alt="Fork me on GitHub" src="img/fork.png"></img></a>
       </body>
     </html>
